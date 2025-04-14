@@ -1,6 +1,8 @@
 #ifndef MOVE
 #define MOVE
 
+#include<string>
+
 #include"CommonTypes.h"
 
 class Move {
@@ -18,7 +20,7 @@ class Move {
     
     public:
 
-    Move(
+Move(
         const byte& _moved_piece, 
         const byte& _captured_piece,
         const byte& _promoted_piece,
@@ -37,6 +39,8 @@ class Move {
     byte GetPreviousCastleRights();
     ull GetPreviousPassantTarget();
     byte GetPreviousHalfMoves();
+
+    std::string ToString(); 
 };
 
 #endif
