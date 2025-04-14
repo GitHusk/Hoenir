@@ -34,7 +34,7 @@ class Position {
     bool white_turn;
     byte castle_rights;
     ull passant_target;
-    int half_moves;
+    byte half_moves;
     int full_moves;
 
     public:
